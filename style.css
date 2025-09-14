@@ -1,0 +1,52 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: url('https://picsum.photos/1600/900') no-repeat center/cover; 
+  min-height: 100vh;
+}
+
+/* Navbar container */
+#nav-bar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1); /* base transparent background */
+  backdrop-filter: blur(10px);          /* blur behind */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Glass hover effect */
+#nav-bar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #f5f5f5;
+}
